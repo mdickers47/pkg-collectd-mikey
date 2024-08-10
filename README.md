@@ -17,7 +17,7 @@ file from https://github.com/vitkabele/dsm-snmp-collectd.  My changes are:
   and have it work
 
 It's not a separate package of config files that depends on collectd,
-for the reason that collect claims ownership of `/etc/collect.conf`
+for the reason that collectd claims ownership of `/etc/collectd.conf`,
 which makes it impossible for another package to modify.
 
 ## adding monitoring of a Synology NAS
