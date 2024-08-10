@@ -13,6 +13,7 @@ file from https://github.com/vitkabele/dsm-snmp-collectd.  My changes are:
   upstream collectd
 + dropped libgcrypt dependency because it has also bit-rotted and I
   don't use it so I don't care
++ make it build on armv7l (but see below)
 + conflicts with `collectd` so that you can install this on top
   and have it work
 
@@ -46,3 +47,16 @@ such as:
 ```
 
 Put this in e.g. `/etc/collectd.d/synology.conf`.
+
+## Building on armv7l
+
+At the time I'm writing this, it is possible to build on armv7l if you
+work around an autoconf "C compiler cannot create executables" failure,
+which is this:
+
+https://github.com/Morganamilo/paru/issues/1184
+
+But beware that archlinuxarm maintenance overall is bad, and random bit
+rot in the build system happens often.  See:
+
+https://www.reddit.com/r/archlinux/comments/1e1mzpd/archlinuxarm_looks_abandoned/?sort=new

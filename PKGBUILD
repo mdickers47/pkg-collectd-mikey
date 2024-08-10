@@ -8,7 +8,7 @@ pkgver=5.12.0
 pkgrel=13
 pkgdesc='Daemon which collects system performance statistics periodically'
 url='https://collectd.org/'
-arch=('x86_64' 'aarch64')
+arch=('x86_64' 'aarch64' 'armv7h')
 license=('GPL')
 
 optdepends=('curl: apache, ascent, curl, nginx, and write_http plugins'
@@ -59,7 +59,7 @@ sha256sums=('5bae043042c19c31f77eb8464e56a01a5454e0b39fa07cf7ad0f1bfc9c3a09d6'
             '13c29b6c13a70495f02e054dff00ebf9498be54729157258eb72e06530edd825'
             'cf510b1010cae65e9de810ec8ff10d624009658b75b1664ad70a34b552fac784'
             'db0801a73e3f282e2ae13bb1993639285df789abd5b074a2f51ffc169a2ec127'
-            'b5908e6b793a6f8bf2e20eda6d59324dcd4b52d53d1781e9b75973df53638ba1')
+            '2f62be76b5c9d7dd94805ab988a56b06db0e3297b03e084c6da7ce657b11b5d5')
 
 backup=('etc/collectd.conf')
 
